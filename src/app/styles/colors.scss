@@ -1,0 +1,37 @@
+
+:root {
+  --primary-color: #3F51B5;
+  --primary-hover-color: #F8F8FC;
+  --primary-color-light: #3f51b540;
+  --soft-blue-color: rgba(58, 95, 205, 0.1);
+  --selected-row-color: #EBEFFA;
+
+  --green-primary: #4CAF50;
+  --green-accent: #69F0AE;
+  --lime-primary: #A6FFA6;
+  --green-primary-transparent: color-mix(in srgb, var(--green-primary) 10%, transparent);
+
+  --red-primary: #E91E63;
+  --warn-color: #FCDAD3;
+  --mistake-color: #FBBDCB;
+  --mistake-row-color: #FBD2E0;
+  --error-accent: #FFA6A6;
+
+  --orange-primary: #F1CC30;
+
+  --disabled-color: #00000012;
+  --disabled-color-light: #ededed;
+  --border-color: #CCCCCC;
+
+  --white-color: white;
+  --black-color: black;
+  --grey-color: #9e9e9e;
+  --light-grey-color: #e5e5e5;
+  --dark-grey-color: #333;
+  --medium-grey-color: #666;
+
+  --transparent-black: #0000;
+  --chat-background-color: #f1f1f1;
+  --chat-account-background-color: #dcf8c6;
+}
+
