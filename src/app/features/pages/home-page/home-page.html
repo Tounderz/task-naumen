@@ -1,0 +1,37 @@
+<div class="wrapper">
+  <div class="filters">
+    <div class="filter">
+      <app-select-component
+        [label]="'Фильтрация по '"
+        [options]="filterOptions"
+        (valueChange)="handleChangeFilter($event)"
+      ></app-select-component>
+    </div>
+    <div class="search">
+      <app-input-component
+        [label]="'Поиск по имени'"
+        (handleChangeInput)="handleChangeSearch($event)"
+      ></app-input-component>
+    </div>
+  </div>
+
+  @if (filteredUsers().length) {
+    <div class="cards">
+      @for (user of filteredUsers(); track user.id) {
+        <app-card
+          [user]="user"
+        ></app-card>
+      }
+    </div>
+    } @else {
+      <div class="empty-state">
+        <div class="poster">
+          <h2 class="poster-title">Ничего не найдено</h2>
+          <div class="poster-description">
+            По вашим критериям поиска пользователи не найдены.
+            Попробуйте изменить параметры фильтрации.
+          </div>
+        </div>
+      </div>
+    }
+</div>

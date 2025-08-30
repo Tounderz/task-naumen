@@ -1,0 +1,73 @@
+@import "variables";
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: $border-radius-sm;
+  color: var(--color-white);
+  font-size: $font-size-sm;
+  z-index: $ui-index-2;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(#000, 20%);
+}
+
+.success {
+  background-color: var(--color-green);
+}
+
+.error {
+  background-color: var(--color-red);
+}
+
+.btn {
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  border: unset;
+
+  &:hover {
+    .icon {
+      filter: var(--color-svg-blue)
+    }
+  }
+}
+
+.icon {
+  filter: var(--color-svg-white);
+  transition: filter $default-transition;
+}
+
+.enter-animation {
+  animation: slide-down $default-transition;
+}
+
+.leave-animation {
+  animation: slide-up $default-transition;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

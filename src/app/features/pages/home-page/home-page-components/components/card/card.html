@@ -1,0 +1,23 @@
+<div class="card">
+  <h4 class="title">{{ user.name }}</h4>
+  <div
+    class="email"
+    [ngClass]="{
+      'visible': showEmail
+    }"
+  >
+    {{ getUserEmail() }}
+  </div>
+  <span
+    class="status"
+    [ngClass]="{
+      'active': user.active
+    }"
+  >
+    {{ user.active ? '✅ Активен' : '❌ Неактивен' }}
+  </span>
+  <app-button-component
+    [label]="getButtonLabel()"
+    (handleClickBtn)="handleClickBtn()"
+  ></app-button-component>
+</div>

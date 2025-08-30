@@ -1,6 +1,6 @@
-import {CardParams} from '../../../../core/types/card-params.types';
+import {UserParams} from '../../../../core/types/user-params.types';
 
-export const defaultCardParams: CardParams = {
+export const defaultUserParams: UserParams = {
   id: 0,
   name: '',
   email: '',

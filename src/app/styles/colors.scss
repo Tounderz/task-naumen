@@ -1,37 +1,18 @@
-
 :root {
-  --primary-color: #3F51B5;
-  --primary-hover-color: #F8F8FC;
-  --primary-color-light: #3f51b540;
-  --soft-blue-color: rgba(58, 95, 205, 0.1);
-  --selected-row-color: #EBEFFA;
-
-  --green-primary: #4CAF50;
-  --green-accent: #69F0AE;
-  --lime-primary: #A6FFA6;
-  --green-primary-transparent: color-mix(in srgb, var(--green-primary) 10%, transparent);
-
-  --red-primary: #E91E63;
-  --warn-color: #FCDAD3;
-  --mistake-color: #FBBDCB;
-  --mistake-row-color: #FBD2E0;
-  --error-accent: #FFA6A6;
-
-  --orange-primary: #F1CC30;
-
-  --disabled-color: #00000012;
-  --disabled-color-light: #ededed;
-  --border-color: #CCCCCC;
-
-  --white-color: white;
-  --black-color: black;
-  --grey-color: #9e9e9e;
-  --light-grey-color: #e5e5e5;
-  --dark-grey-color: #333;
-  --medium-grey-color: #666;
-
+  --color-white: #fff;
+  --black-color: #000;
+  --color-grey: #323232;
+  --color-grey-light: #f4f4f4;
+  --color-blue: #158fd3;
+  --color-hover: rgba(21, 143, 211, 0.25);
+  --color-bg: rgba(207, 220, 226, 0.25);
+  --color-bg-hex: #f3f6f8;
+  --color-green: #53a138;
+  --color-light-green: #d0e3c9;
+  --color-yellow: #eea414;
+  --color-red: #d31515;
+  --color-border: #e7eff4;
   --transparent-black: #0000;
-  --chat-background-color: #f1f1f1;
-  --chat-account-background-color: #dcf8c6;
+  --color-svg-blue: brightness(0) saturate(100%) invert(61%) sepia(78%) saturate(6289%) hue-rotate(179deg) brightness(99%) contrast(84%);
+  --color-svg-white: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(73deg) brightness(113%) contrast(101%);
 }
-

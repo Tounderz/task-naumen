@@ -1,0 +1,51 @@
+@import "variables";
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-bg);
+  border: 1px solid transparent;
+  border-radius: $border-radius-default;
+  font-size: 18px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: border-color $default-transition;
+
+  &:focus {
+    border-color: var(--color-blue);
+    outline: none;
+  }
+}
+
+.label {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  padding-inline: 5px;
+  color: var(--color-grey);
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition:
+    top $default-transition,
+    color $default-transition,
+    font-size $default-transition;
+}
+
+.input:focus ~ .label,
+.input:not(:placeholder-shown) ~ .label {
+  top: 0;
+  font-size: 14px;
+  color: var(--color-blue);
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    transparent 50%,
+    var(--color-bg-hex) 50%,
+    var(--color-bg-hex) 100%
+  );
+}

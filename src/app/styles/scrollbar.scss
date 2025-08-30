@@ -9,9 +9,10 @@
     background-color: transparent;
 
     &:hover {
-      background-color: #f4f4f4;
+      background-color: var(--color-grey-light);
     }
   }
+
   &-thumb {
     border-radius: 4px;
     background-color: rgba(64, 82, 97, .6);

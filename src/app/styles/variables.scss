@@ -1,15 +1,18 @@
 $ui-index-1: 1;
 $ui-index-2: 2;
 $ui-index-3: 3;
-$ui-index-4: 4;
-$ui-index-5: 5;
-$ui-index-6: 6;
+
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+
+$border-radius-default: 10px;
+$border-radius-sm: 4px;
 
 $default-transition: .3s ease-in-out;
 
-// breakpoints
 $lg: 980px;
-$sm: 665px;
+$sm: 640px;
 $xs: 0;
 
 $ui-mobile: 'screen and (width < #{$sm})';

@@ -1,0 +1,39 @@
+@import "variables";
+
+.card {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: $border-radius-default;
+}
+
+.title,
+.status,
+.email {
+  text-align: center;
+}
+
+.status {
+  &:not(.active) {
+    color: var(--color-red);
+  }
+
+  &.active {
+    color: var(--color-green);
+  }
+}
+
+.email {
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity $default-transition,
+    visibility $default-transition;
+
+  &.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+

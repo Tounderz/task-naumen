@@ -1,0 +1,53 @@
+@import "variables";
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filter,
+.search {
+  width: 300px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding-block: 20px;
+}
+
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 2rem;
+}
+
+.poster {
+  text-align: center;
+  max-width: 400px;
+
+  &-title {
+    font-size: $font-size-lg;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--color-red);
+
+    &-description {
+      color: var(--color-grey);
+    }
+  }
+}
+
+@media #{$ui-mobile} {
+  .filters {
+    flex-direction: column;
+  }
+
+  .filter,
+  .search {
+    width: 100%;
+  }
+}

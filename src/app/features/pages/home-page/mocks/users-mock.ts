@@ -1,8 +1,8 @@
-import {UserParams} from '../../../../../../core/types/user-params.types';
+import {UserParams} from '../../../../core/types/user-params.types';
 
 export const users: Array<UserParams> = [
   { id: 1, name: 'Алексей', email: 'alex@mail.com', active: true },
-  { id: 2, name: 'Мария', email: 'maria@mail.com', active: false },
+  { id: 2, name: 'Мария', email: '', active: false },
   { id: 3, name: 'Дмитрий', email: 'dmitry@mail.com', active: true },
   { id: 4, name: 'Елена', email: 'elena@mail.com', active: true },
   { id: 5, name: 'Сергей', email: 'sergey@mail.com', active: false },
